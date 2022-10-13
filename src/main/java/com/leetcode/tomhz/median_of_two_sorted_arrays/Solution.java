@@ -1,4 +1,4 @@
-package leetCode4_median_of_two_sorted_arrays;
+package com.leetcode.tomhz.median_of_two_sorted_arrays;
 
 import java.util.HashSet;
 import java.util.Set;

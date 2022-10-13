@@ -1,12 +1,9 @@
-package leetCode591;
+package com.leetcode.tomhz.tag_validator;
 
 import java.io.IOException;
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.Map;
-import java.util.TreeMap;
 
-import com.google.common.base.Strings;
 public class Solution {
 	public static void main(String[] args) throws InterruptedException, IOException {
 		Solution s = new Solution();
