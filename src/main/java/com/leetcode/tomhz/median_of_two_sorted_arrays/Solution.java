@@ -14,23 +14,25 @@ public class Solution {
 			set.add(length / 2 - 1); 
 		}
 		while(!set.isEmpty()) {
-//			int tmp;
-//			if(a >= nums1.length) {
-//				if(set.contains(a + b)) {
-//					rs += nums2[b];
-//					set.remove(a + b);
-//				}
-//				b++;
-//			}
-//			if(b >= nums2.length) {
-//				if(set.contains(a + b)) {
-//					rs += nums1[a];
-//					set.remove(a + b);
-//				}
-//				a++;
-//			}
+			int tmp;
+			if(a >= nums1.length) {
+				if(set.contains(a + b)) {
+					rs += nums2[b];
+					set.remove(a + b);
+				}
+				b++;
+				continue;
+			}
+			if(b >= nums2.length) {
+				if(set.contains(a + b)) {
+					rs += nums1[a];
+					set.remove(a + b);
+				}
+				a++;
+				continue;
+			}
 			
-			if((a < nums1.length ? nums1[a] : Integer.MAX_VALUE) > (b < nums2.length ? nums2[b] : Integer.MAX_VALUE)) {
+			if(nums1[a] > nums2[b]) {
 				if(set.contains(a + b)) {
 					rs += nums2[b];
 					set.remove(a + b);
